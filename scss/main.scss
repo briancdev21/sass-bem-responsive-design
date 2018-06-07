@@ -1,3 +1,18 @@
 @import 'variables';
 @import 'common';
 @import 'header';
+
+.breadcrumb {
+  position: relative;
+  width: auto;
+  max-width: 988px;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 0;
+  li {
+    list-style-type: none;
+    font-size: 100%;
+    margin: 0;
+    display: inline-block;
+  }
+}

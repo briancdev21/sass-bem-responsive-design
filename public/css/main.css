@@ -60,6 +60,9 @@ li {
 .vagbold {
   font-family: 'VAG Rounded W01 Bold'; }
 
+.clear {
+  clear: both; }
+
 header {
   position: relative;
   width: auto;
@@ -273,3 +276,16 @@ header {
         text-align: center;
         float: none;
         margin: auto; } }
+
+.breadcrumb {
+  position: relative;
+  width: auto;
+  max-width: 988px;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 0; }
+  .breadcrumb li {
+    list-style-type: none;
+    font-size: 100%;
+    margin: 0;
+    display: inline-block; }
