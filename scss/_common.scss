@@ -38,6 +38,7 @@ body {
 	font-size: 0.813em;
 	color: #494b51;
   overflow-x: hidden;
+  background-image: none;
   
   @media #{$medium-only} {
     margin-top: 55px;

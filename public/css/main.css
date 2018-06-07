@@ -30,7 +30,8 @@ body {
   font-family: 'VAG Rounded W01 Light';
   font-size: 0.813em;
   color: #494b51;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-image: none; }
   @media (min-width: 47.05em) and (max-width: 64em) {
     body {
       margin-top: 55px;
@@ -158,6 +159,19 @@ header {
             width: 100%; }
             header .navfixed__wrapper #providesupport img {
               margin-right: 15px; } }
+        @media (max-width: 47em) {
+          header .navfixed__wrapper #providesupport {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            text-align: right; }
+            header .navfixed__wrapper #providesupport #scmFay {
+              position: relative;
+              z-index: 9999;
+              height: 50px;
+              float: none;
+              right: -90px; } }
       @media (min-width: 47.05em) and (max-width: 64em) {
         header .navfixed__wrapper {
           width: 100%; } }
@@ -310,26 +324,6 @@ header {
   @media (max-width: 47em) {
     header {
       margin-bottom: 30px; } }
-
-.breadcrumb {
-  position: relative;
-  width: auto;
-  max-width: 988px;
-  margin: 0 auto;
-  background-color: transparent;
-  padding: 0; }
-  .breadcrumb li {
-    list-style-type: none;
-    font-size: 100%;
-    margin: 0;
-    display: inline-block; }
-  @media (min-width: 47.05em) and (max-width: 64em) {
-    .breadcrumb {
-      margin-left: 10px; } }
-  @media (max-width: 47em) {
-    .breadcrumb {
-      margin-left: 10px;
-      margin-bottom: 10px; } }
 
 #footernavigationcontainer {
   max-width: 988px;

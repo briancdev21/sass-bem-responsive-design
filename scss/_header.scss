@@ -90,6 +90,20 @@ header {
             margin-right: 15px;
           }
         }
+        @media #{$small-only} {
+          position: fixed;
+          width: 100%;
+          top: 0;
+          right: 0;
+          text-align: right;
+          #scmFay {
+            position: relative;
+            z-index: 9999;
+            height: 50px;
+            float: none;
+            right: -90px;
+          }
+        }
       }
       @media #{$medium-only} {
         width: 100%;
