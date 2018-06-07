@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "VAG Rounded W01 Thin";
+  src: url("https://fast.fonts.net/dv2/14/29eae2bc-c419-4bac-855f-4381ae1ee86e.woff2?d44f19a684109620e484147ea090e8187841bec9491a39d5f52c56125248e0330b19b529b6b6117bb7e6450eff0ad85f87c89ee556155e1f5693335554d2ce78b7a39b91e243826dd8cf67340b&projectId=5973590c-133e-47d6-bad7-48fdb7d73501") format("woff2"); }
+
+@font-face {
+  font-family: "VAG Rounded W01 Light";
+  src: url("https://fast.fonts.net/dv2/14/564b9dc8-3660-48d5-8467-45cddd8f739e.woff2?d44f19a684109620e484147ea090e8187841bec9491a39d5f52c56125248e0330b19b529b6b6117bb7e6450eff0ad85f87c89ee556155e1f5693335554d2ce78b7a39b91e243826dd8cf67340b&projectId=5973590c-133e-47d6-bad7-48fdb7d73501") format("woff2"); }
+
+@font-face {
+  font-family: "VAG Rounded W01 Bold";
+  src: url("https://fast.fonts.net/dv2/14/9064823a-ffe2-46f1-8b16-da2407201487.woff2?d44f19a684109620e484147ea090e8187841bec9491a39d5f52c56125248e0330b19b529b6b6117bb7e6450eff0ad85f87c89ee556155e1f5693335554d2ce78b7a39b91e243826dd8cf67340b&projectId=5973590c-133e-47d6-bad7-48fdb7d73501") format("woff2"); }
+
+@font-face {
+  font-family: "VAG Rounded W01 Thin";
+  src: url("https://fast.fonts.net/dv2/14/29eae2bc-c419-4bac-855f-4381ae1ee86e.woff2?d44f19a684109620e484147ea090e8187841bec9491a39d5f52c56125248e0330b19b529b6b6117bb7e6450eff0ad85f87c89ee556155e1f5693335554d2ce78b7a39b91e243826dd8cf67340b&projectId=5973590c-133e-47d6-bad7-48fdb7d73501") format("woff2"); }
+
+@font-face {
+  font-family: "VAG Rounded W01 Light";
+  src: url("https://fast.fonts.net/dv2/14/564b9dc8-3660-48d5-8467-45cddd8f739e.woff2?d44f19a684109620e484147ea090e8187841bec9491a39d5f52c56125248e0330b19b529b6b6117bb7e6450eff0ad85f87c89ee556155e1f5693335554d2ce78b7a39b91e243826dd8cf67340b&projectId=5973590c-133e-47d6-bad7-48fdb7d73501") format("woff2"); }
+
+@font-face {
+  font-family: "VAG Rounded W01 Bold";
+  src: url("https://fast.fonts.net/dv2/14/9064823a-ffe2-46f1-8b16-da2407201487.woff2?d44f19a684109620e484147ea090e8187841bec9491a39d5f52c56125248e0330b19b529b6b6117bb7e6450eff0ad85f87c89ee556155e1f5693335554d2ce78b7a39b91e243826dd8cf67340b&projectId=5973590c-133e-47d6-bad7-48fdb7d73501") format("woff2"); }
+
+body {
+  font-family: 'Arial, Helvetica', sans-serif;
+  padding: 0;
+  margin-top: 20px;
+  font-family: 'VAG Rounded W01 Light';
+  font-size: 0.813em;
+  color: #494b51;
+  overflow-x: hidden; }
+  @media (min-width: 47.05em) and (max-width: 64em) {
+    body {
+      margin-top: 55px;
+      overflow-x: hidden; } }
+
+a {
+  text-decoration: none;
+  color: #6FAB2D;
+  transition: color .5s ease;
+  font-weight: bold; }
+
+img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+li {
+  line-height: 20px; }
+
+.hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.vagbold {
+  font-family: 'VAG Rounded W01 Bold'; }
+
+header {
+  position: relative;
+  width: auto;
+  max-width: 988px;
+  margin: 0 auto; }
+  header .navfixed {
+    z-index: 9999;
+    position: fixed;
+    width: 988px;
+    height: 0px;
+    background: #fff;
+    top: 0; }
+    header .navfixed__toggleMobile {
+      display: none; }
+      @media (max-width: 47em) {
+        header .navfixed__toggleMobile {
+          position: fixed;
+          top: 15px;
+          left: 10px;
+          display: block;
+          width: 38px;
+          height: 31px;
+          cursor: pointer;
+          z-index: 999; }
+          header .navfixed__toggleMobile.active span.menu1 {
+            top: 12px;
+            transform: rotate(45deg);
+            transition: all 0.5s cubic-bezier(0.75, 0.25, 0.1, 0.95);
+            background: #fff; }
+          header .navfixed__toggleMobile.active span.menu2 {
+            transform: rotate(-45deg);
+            transition: all 0.5s cubic-bezier(0.75, 0.25, 0.1, 0.95);
+            background: #fff; }
+          header .navfixed__toggleMobile.active span.menu3 {
+            opacity: 0;
+            transition: opacity 0.35s cubic-bezier(0.75, 0.25, 0.1, 0.95);
+            background: #fff; }
+          header .navfixed__toggleMobile__menu {
+            display: block;
+            position: absolute;
+            width: 38px;
+            height: 6px;
+            left: 0;
+            background: #5d5c5c;
+            -webkit-transition: all 0.35s cubic-bezier(0.75, 0.25, 0.1, 0.95);
+            transition: all 0.35s cubic-bezier(0.75, 0.25, 0.1, 0.95); }
+          header .navfixed__toggleMobile__menu--top {
+            top: 0; }
+          header .navfixed__toggleMobile__menu--middle {
+            top: 12px; }
+          header .navfixed__toggleMobile__menu--bottom {
+            top: 24px; } }
+    header .navfixed__wrapper {
+      width: 988px;
+      margin: 0 auto;
+      text-align: left; }
+      header .navfixed__wrapper #providesupport {
+        position: relative;
+        width: 100%; }
+        header .navfixed__wrapper #providesupport #scmFay {
+          position: relative;
+          z-index: 9999;
+          height: 50px;
+          float: right; }
+        @media (min-width: 47.05em) and (max-width: 64em) {
+          header .navfixed__wrapper #providesupport {
+            width: 100%; }
+            header .navfixed__wrapper #providesupport img {
+              margin-right: 15px; } }
+      @media (min-width: 47.05em) and (max-width: 64em) {
+        header .navfixed__wrapper {
+          width: 100%; } }
+    @media (min-width: 47.05em) and (max-width: 64em) {
+      header .navfixed {
+        width: 100%; } }
+  header #mobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 999; }
+    header #mobileMenu ul {
+      margin: 0px;
+      margin-top: 60px;
+      padding-left: 0; }
+      header #mobileMenu ul li {
+        display: block;
+        font-size: 1.692em;
+        padding: 14px 0 14px 6px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        font-size: 25px;
+        line-height: 1.5em; }
+        header #mobileMenu ul li a {
+          color: #fff; }
+  header #leftheaderlogo {
+    max-width: 405px;
+    width: auto;
+    float: left; }
+    header #leftheaderlogo h1 {
+      margin-top: 0; }
+    header #leftheaderlogo img {
+      max-width: 80%;
+      height: auto; }
+      @media (min-width: 47.05em) and (max-width: 64em) {
+        header #leftheaderlogo img {
+          max-width: 100%;
+          width: 100%; } }
+    @media (min-width: 47.05em) and (max-width: 64em) {
+      header #leftheaderlogo {
+        max-width: 240px;
+        margin: 0px 10px 0px 10px;
+        margin-top: -20px;
+        margin-left: 20px; } }
+    @media (max-width: 47em) {
+      header #leftheaderlogo {
+        margin: auto;
+        margin-top: 60px;
+        text-align: center;
+        float: none; } }
+  header .rightheader {
+    max-width: 583px;
+    width: auto;
+    float: right;
+    margin: 0 0 40px 0; }
+    header .rightheader__top {
+      margin: 0px;
+      width: auto;
+      float: right; }
+      header .rightheader__top__telephone {
+        margin: 30px 10px 0px 0px;
+        font-size: 1.692em;
+        width: auto;
+        float: left; }
+        @media (min-width: 47.05em) and (max-width: 64em) {
+          header .rightheader__top__telephone {
+            font-size: 1.5em;
+            margin-top: 10px; } }
+        @media (max-width: 47em) {
+          header .rightheader__top__telephone {
+            font-size: 1.4em;
+            float: none;
+            margin: auto; } }
+      @media (max-width: 47em) {
+        header .rightheader__top {
+          margin: auto;
+          float: none; } }
+    header .rightheader__bottom {
+      margin-top: 20px;
+      width: auto;
+      float: right; }
+      header .rightheader__bottom nav {
+        border-top: 1px #eeeeee solid;
+        padding-top: 13px;
+        float: left;
+        width: 980px; }
+        header .rightheader__bottom nav:before {
+          content: "";
+          width: 100vw;
+          border-bottom: 1px solid #eeeeee;
+          position: absolute;
+          left: 50%;
+          margin-left: -50vw;
+          margin-top: -14px; }
+        header .rightheader__bottom nav ul {
+          margin: 0 0 10px 0;
+          padding: 0;
+          list-style: none;
+          display: inline-block; }
+          header .rightheader__bottom nav ul li {
+            display: block;
+            float: left;
+            padding: 3px 6px; }
+            header .rightheader__bottom nav ul li a {
+              font-size: 1.692em;
+              color: #5d5c5c;
+              font-weight: normal;
+              transition: all .25s ease;
+              padding-right: 63px; }
+              header .rightheader__bottom nav ul li a:hover {
+                color: #6fab2d;
+                text-decoration: underline;
+                transition: color .5s ease; }
+              @media (min-width: 47.05em) and (max-width: 64em) {
+                header .rightheader__bottom nav ul li a {
+                  font-weight: normal;
+                  padding: 0 20px 0 13px;
+                  font-size: 1.35em; } }
+            header .rightheader__bottom nav ul li .contact a {
+              padding-right: 0; }
+        @media (min-width: 47.05em) and (max-width: 64em) {
+          header .rightheader__bottom nav {
+            width: 100vw;
+            margin: 0 auto;
+            text-align: center; } }
+      @media (min-width: 47.05em) and (max-width: 64em) {
+        header .rightheader__bottom {
+          margin-top: 20px; } }
+      @media (max-width: 47em) {
+        header .rightheader__bottom {
+          display: none; } }
+    @media (min-width: 47.05em) and (max-width: 64em) {
+      header .rightheader {
+        max-width: 465px;
+        margin-right: 0; } }
+    @media (max-width: 47em) {
+      header .rightheader {
+        text-align: center;
+        float: none;
+        margin: auto; } }

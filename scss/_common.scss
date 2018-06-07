@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "VAG Rounded W01 Thin";
+  src: url("https://fast.fonts.net/dv2/14/29eae2bc-c419-4bac-855f-4381ae1ee86e.woff2?d44f19a684109620e484147ea090e8187841bec9491a39d5f52c56125248e0330b19b529b6b6117bb7e6450eff0ad85f87c89ee556155e1f5693335554d2ce78b7a39b91e243826dd8cf67340b&projectId=5973590c-133e-47d6-bad7-48fdb7d73501") format('woff2');
+}
+
+@font-face {
+  font-family: "VAG Rounded W01 Light";
+  src: url("https://fast.fonts.net/dv2/14/564b9dc8-3660-48d5-8467-45cddd8f739e.woff2?d44f19a684109620e484147ea090e8187841bec9491a39d5f52c56125248e0330b19b529b6b6117bb7e6450eff0ad85f87c89ee556155e1f5693335554d2ce78b7a39b91e243826dd8cf67340b&projectId=5973590c-133e-47d6-bad7-48fdb7d73501") format('woff2');
+}
+
+@font-face {
+  font-family: "VAG Rounded W01 Bold";
+  src: url("https://fast.fonts.net/dv2/14/9064823a-ffe2-46f1-8b16-da2407201487.woff2?d44f19a684109620e484147ea090e8187841bec9491a39d5f52c56125248e0330b19b529b6b6117bb7e6450eff0ad85f87c89ee556155e1f5693335554d2ce78b7a39b91e243826dd8cf67340b&projectId=5973590c-133e-47d6-bad7-48fdb7d73501") format('woff2');
+}
+
+@font-face {
+  font-family: "VAG Rounded W01 Thin";
+  src: url("https://fast.fonts.net/dv2/14/29eae2bc-c419-4bac-855f-4381ae1ee86e.woff2?d44f19a684109620e484147ea090e8187841bec9491a39d5f52c56125248e0330b19b529b6b6117bb7e6450eff0ad85f87c89ee556155e1f5693335554d2ce78b7a39b91e243826dd8cf67340b&projectId=5973590c-133e-47d6-bad7-48fdb7d73501") format('woff2');
+}
+
+@font-face {
+  font-family: "VAG Rounded W01 Light";
+  src: url("https://fast.fonts.net/dv2/14/564b9dc8-3660-48d5-8467-45cddd8f739e.woff2?d44f19a684109620e484147ea090e8187841bec9491a39d5f52c56125248e0330b19b529b6b6117bb7e6450eff0ad85f87c89ee556155e1f5693335554d2ce78b7a39b91e243826dd8cf67340b&projectId=5973590c-133e-47d6-bad7-48fdb7d73501") format('woff2');
+}
+
+@font-face {
+  font-family: "VAG Rounded W01 Bold";
+  src: url("https://fast.fonts.net/dv2/14/9064823a-ffe2-46f1-8b16-da2407201487.woff2?d44f19a684109620e484147ea090e8187841bec9491a39d5f52c56125248e0330b19b529b6b6117bb7e6450eff0ad85f87c89ee556155e1f5693335554d2ce78b7a39b91e243826dd8cf67340b&projectId=5973590c-133e-47d6-bad7-48fdb7d73501") format('woff2');
+}
+
+//Global custom variables
+body {
+	font-family: 'Arial, Helvetica', sans-serif;
+  padding: 0;
+	margin-top: 20px;
+	font-family: 'VAG Rounded W01 Light';
+	font-size: 0.813em;
+	color: #494b51;
+  overflow-x: hidden;
+  
+  @media #{$medium-only} {
+    margin-top: 55px;
+    overflow-x: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #6FAB2D;
+  transition: color .5s ease;
+  font-weight: bold;
+}
+
+img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+li {
+  line-height: 20px;
+}
+
+.hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.vagbold {
+  font-family: 'VAG Rounded W01 Bold';
+}

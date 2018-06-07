@@ -1,0 +1,23 @@
+
+$screen: "only screen";
+
+$xsmall-up: screen;
+$xsmall-only: "(max-width: 30em)";
+
+$small-up: screen;
+$small-only: "(max-width: 47em)";
+
+$medium-down: "(max-width:47em)";;
+$medium-up: "(min-width:47.05em)";
+$medium-only: "(min-width:47.05em) and (max-width:64em)";
+
+$large-down: "(max-width:64em)";
+$large-up: "(min-width:64.05em)";
+$large-only: "(min-width:64.05em) and (max-width:90em)";
+
+// screen sizes
+// TDO replace all instances of this var with the correct var above
+$scr-md: 'max-width: 768px';
+
+$frontend: 'html:not(.page-editor)';
+$admin: 'html.page-editor';
