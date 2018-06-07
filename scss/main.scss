@@ -1,18 +1,526 @@
 @import 'variables';
 @import 'common';
 @import 'header';
+@import 'footer';
 
-.breadcrumb {
-  position: relative;
+#homepage-first-row {
+  max-width: 988px;
+  margin: auto;
+  height: 80px;
+  text-align: left;
+  span {
+    font-weight: normal;
+    color: #494b51;
+    font-size: 3.192em;
+    display: inline-block;
+
+    @media #{$medium-only} {
+      font-size: 2.4em;
+      margin: 0px 0px 0px 10px;
+    }
+    @media #{$small-only} {
+      font-size: 2em;
+      margin: 0px 0px 0px 10px;
+    }
+  }
+
+  @media #{$medium-only} {
+    height: 40px;
+  }
+  @media #{$small-only} {
+    height: 30px;
+  }
+}
+
+#homepage-second-row {
+  max-width: 988px;
+  margin: 30px auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  float: none;
+  width: 100%;
+
+  p {
+    font-size: 1.385em;
+    line-height: 1.3em;
+    margin-top: 2px;
+    margin-bottom: 16px;
+  }
+  .secondrow__column {
+    @at-root #{&}--first {
+      flex: 1;
+      max-width: 300px;
+      min-width: 300px;
+      margin: 10px;
+      margin-bottom: 20px;
+      width: auto; 
+      p+p {
+        margin-bottom: 4px;
+      }
+    }
+  
+    @at-root #{&}--second {
+      flex: 1;
+      max-width: 300px;
+      min-width: 300px;
+      width: auto;
+      margin: 10px;
+      margin-bottom: 20px;
+      .ticklist {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+  
+        li  {
+          font-size: 1.385em;
+          padding: 6px 0px 6px 0px;
+          background-image: url('../assets/ticklist.gif');
+          background-repeat: no-repeat;
+          background-position: 0px 7px;
+          padding-left: 24px;
+        }
+      }
+    }
+    
+    @at-root #{&}--third {
+      float: left;
+      margin: 0;
+      max-width: 280px;
+      min-width: 280px;
+      margin: 10px;
+      margin-bottom: 20px;
+      width: auto; 
+    }
+  
+    @media (min-width: 840px) and (max-width: 1024px) {
+      @at-root #{&}--first {
+        max-width: 260px;
+        min-width: 260px;
+        p {
+          font-size: 1.185em;
+        }
+      }
+    
+      @at-root #{&}--second {
+        max-width: 260px;
+        min-width: 260px;
+        .ticklist {
+          li  {
+            font-size: 1.285em;
+          }
+        }
+      }
+      
+      @at-root #{&}--third {
+        max-width: 240px;
+        min-width: 240px;
+      }
+    }
+    @media (max-width: 840px) {
+      @at-root #{&}--first {
+        max-width: 340px;
+        min-width: 340px;
+        p {
+          font-size: 1.385em;
+        }
+      }
+    
+      @at-root #{&}--second {
+        max-width: 340px;
+        min-width: 340px;
+        .ticklist {
+          li  {
+            font-size: 1.385em;
+          }
+        }
+      }
+      
+      @at-root #{&}--third {
+        max-width: 340px;
+        min-width: 340px;
+      }
+    }
+    @media (max-width: 460px) {
+      @at-root #{&}--first {
+        margin-top: 30px;
+        max-width: 340px;
+        min-width: 340px;
+        p {
+          font-size: 1.285em;
+        }
+      }
+    
+      @at-root #{&}--second {
+        max-width: 340px;
+        min-width: 340px;
+        .ticklist {
+          li  {
+            font-size: 1.285em;
+          }
+        }
+      }
+      
+      @at-root #{&}--third {
+        max-width: 340px;
+        min-width: 340px;
+      }
+    }
+  }
+
+  @media (max-width: 840px) {
+    max-width: 400px;
+    padding: 0;
+    padding-top: 20px;
+  }
+}
+#compare-loans-page-wide-title {
+  clear: both;
+  margin: 0;
+  padding: 0;
   width: auto;
+  background-color: #76a645;
+  
+  h1 {
+    color: #fff;
+    font-size: 2em;
+    margin: 0;
+    padding-top: 20px;
+    @media #{$small-only} {
+      font-size: 1.8em;
+    }
+  }
+  article {
+    max-width: 988px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    @media #{$medium-only} {
+      margin-left: 10px !important;
+    }
+    @media #{$small-only} {
+      margin-left: 10px !important;
+    }
+  }
+}
+
+// Tab section 
+
+#menu-bg {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  background-image: url(https://www.lendfair.co.uk/css/../images/bg_top.jpg);
+  background-repeat: repeat-x;
+}
+
+#content2, #content1, #content3 {
+  clear: both;
   max-width: 988px;
   margin: 0 auto;
-  background-color: transparent;
-  padding: 0;
-  li {
-    list-style-type: none;
-    font-size: 100%;
+  display: none;
+  margin-top: 20px;
+
+  @media #{$xsmall-only} {
+    padding: 20px 10px !important;
+  }
+}
+
+#homepage-tabs {
+  float: left;
+  margin: 0 auto;
+  @media #{$xsmall-only} {
+    max-width: 100%;
+  }
+}
+#content1 iframe {
+  border: none;
+}
+
+
+table.tftable {
+  font-size: 1.2em;
+  color: #333333;
+  width: 550px;
+  border-width: 1px;
+  border-color: #ffffff;
+  border-collapse: collapse;
+  th {
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #E2EED4;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #ffffff;
+    text-align: left;
+  }
+  tr {
+    background-color: #ffffff;
+  }
+  td {
+    font-size: 1.2em;
+    border-width: 1px;
+    padding: 12px;
+    border-style: solid;
+    border-color: #ffffff;
+  }
+}
+
+.compare-table {
+  @media #{$medium-only} {
+    font-size: 0.9em;
+  }
+  @media #{$small-only} {
+    font-size: 0.8em;
+  }
+  @media #{$xsmall-only} {
+    font-size: 0.7em;
+  }
+}
+
+ #menu-bg .tab_container label {
+  @media #{$medium-only} {
+    margin-top: 13px; 
+  }
+  @media #{$small-only} {
+    margin-top: 16px; 
+  }
+  @media #{$xsmall-only} {
+    margin-top: 19px; 
+  }
+  a {
+    @media #{$medium-only} {
+      padding: 8px 15px;
+      margin-left: 5px;
+    }
+    @media #{$small-only} {
+      font-size: 1.4em;
+      padding: 8px 15px;
+      margin-left: 3px;
+    }
+    @media #{$xsmall-only} {
+      font-size: 1em;
+      padding: 8px 10px;
+      margin-left: 3px;
+    }
+  }
+}
+
+#opening-hours {
+  margin-top: 30px;
+  width: 100%;
+  float: none;
+  padding: 10px;
+  box-sizing: border-box;
+
+  article {
+    display: block;
     margin: 0;
-    display: inline-block;
+    float: none;
+    max-width: 100%;
+    width: 100%;
+    h2 {
+      margin: 5px 0px 0px 0px;
+      padding: 0px;
+      font-weight: bold;
+      font-size: 2em;
+      @media #{$small-only} {
+        font-size: 1.8em;
+      }
+    }
+    table {
+      font-size: 1.6em;
+      color: #333333;
+      width: 98%;
+      border-width: 1px;
+      border-color: #ffffff;
+      border-collapse: collapse;
+      tr {
+        background-color: #E2EED4;
+      }
+      td {
+        border-width: 1px;
+        padding: 12px;
+        border-style: solid;
+        border-color: #ffffff;
+        font-size: 1em;
+        @media #{$small-only} {
+          font-size: 0.9em;
+        }
+        @media #{$xsmall-only} {
+          font-size: 0.8em;
+        }
+
+      }
+    }
+  }
+}
+
+#homepage-third-row-green {
+  width: auto;
+  position: relative;
+  clear: both;
+  background-color: #558B19;
+
+  .homepage-third-row {
+    clear: both;
+    width: auto;
+    max-width: 988px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+
+    @at-root #{&}__column1 {
+      flex: 3;
+      min-width: 380px;
+      #testimonial {
+        float: none;
+        display: flex;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+        justify-content: flex-start;
+        #testimonialtext {
+          flex: 1;
+          margin: 10px;
+        }
+        #testimonialtextauthor {
+          width: 100%;
+        }
+      }
+      @media #{$medium-only} {
+        min-width: 100%;
+        #testimonialtext {
+          font-size: 2.2em;
+        }
+      }
+      @media #{$small-only} {
+        #testimonial {
+          margin: 20px 20px 10px;
+        }      
+      }
+      @media #{$medium-only} {
+        #testimonial {
+          max-width: 80%; 
+          margin: 30px auto 0;
+        }      
+      }
+    }
+    @at-root #{&}__column2 {
+      flex: 2;
+      min-width: 320px;
+      display: flex;
+      align-items: center;
+      margin: 0 20px;
+      #video-container {
+        margin: 40px auto;
+        .video {
+          max-width: 700px;
+          margin: auto;
+        }
+        @media #{$medium-only} {
+          .video {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+          }      
+        }
+        @media #{$small-only} {
+          .video {
+            width: 100%;
+            height: 300px;
+          }      
+        }
+        @media #{$xsmall-only} {
+          .video {
+            width: 100%;
+            height: 250px;
+          }      
+        }
+      }
+    }
+  }
+}
+
+// how it works
+.howitworks_sec {
+  background-color: #77A648;
+  @at-root #{&}__content {
+    max-width: 988px;
+    margin: 0 auto;
+    padding: 40px 0px 40px 0px;
+    h3 {
+      font-size: 2.154em;
+      font-family: 'VAG Rounded W01 Light';
+      line-height: 1.2em;
+      font-weight: normal;
+      text-align: center;
+      color: #ffffff;
+      padding: 0;
+
+      @media #{$small-only} {
+        font-size: 1.954em;
+      }
+    }
+    h4 {
+      font-size: 2.154em;
+      font-family: 'VAG Rounded W01 Bold';
+      line-height: 1.2em;
+      text-align: center;
+      color: #ffffff;
+      margin: 10px 0px 10px 0px;
+      @media #{$small-only} {
+        font-size: 1.954em;
+      }
+    }
+
+    .howitworks {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      box-sizing: border-box;
+    
+      @at-root #{&}__step {
+        max-width: 310px;
+        height: 360px;
+        padding: 0px;
+        width: 100%;
+        margin: 20px;
+        background: #ffffff;
+      
+        @media #{$medium-only} {
+          max-width: 235px;
+          margin: 0 1%;
+        }
+        @media #{$small-only} {
+          margin: 20px;
+        }
+      }
+      @media #{$small-only} {
+        flex-direction: column;
+        align-items: center;
+      }
+      figcaption {
+        font-size: 1.4em;
+        line-height: 1.2em;
+        max-width: 310px;
+        padding: 10px 15px 10px 15px;
+        text-align: center;
+        box-sizing: border-box;
+
+        strong {
+          font-size: 1.4em;
+          line-height: 1.2em;
+          margin-bottom: 20px;
+          font-family: 'VAG Rounded W01 Bold';
+          max-width: 310px;
+          text-align: center;
+        }
+      }
+    }
   }
 }

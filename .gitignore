@@ -1,4 +1,4 @@
 node_modules
-public/assets/css
+public/css
 package-lock.json
 .sass-cache
