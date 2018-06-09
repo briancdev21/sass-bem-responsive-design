@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'common';
+@import 'header';
+@import 'footer';
+@import 'main';
+
+#page-wide-title {
+  @media #{$small-only} {
+    font-size: 0.853em;
+  }
+}
