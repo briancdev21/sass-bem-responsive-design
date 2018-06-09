@@ -1,0 +1,53 @@
+@import 'variables';
+@import 'common';
+@import 'header';
+@import 'footer';
+@import 'main';
+
+figure {
+  img {
+    width: auto;
+  }
+}
+
+#ppimg {
+  width: 160px;
+  @media #{$small-only} {
+    display: none;
+  }
+}
+
+#page-wide-title {
+  @media #{$small-only} {
+    h1 {
+      font-size: 2em;
+    }
+    P {
+      font-size: 1.4em;
+    }
+  }
+}
+
+#paypoint-form {  
+  .formcontentlabel p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+  @media #{$small-only} {
+    font-size: 0.853em;
+  }
+}
+
+.button-apply-large {
+  margin: 0px;
+  padding: 5px 20px 5px 10px;
+  font-family: 'VAG Rounded W01 Light';
+  background: #F96E00;
+  color: white;
+  font-size: 180%;
+  border-radius: 4px;
+  /* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); */
+}
