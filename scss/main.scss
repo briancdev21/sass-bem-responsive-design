@@ -282,14 +282,15 @@ table.tftable {
 }
 
  #menu-bg .tab_container label {
+   margin-top: 11px;
   @media #{$medium-only} {
-    margin-top: 13px; 
+    margin-top: 10px; 
   }
   @media #{$small-only} {
-    margin-top: 16px; 
+    margin-top: 14px; 
   }
   @media #{$xsmall-only} {
-    margin-top: 19px; 
+    margin-top: 18px; 
   }
   a {
     @media #{$medium-only} {

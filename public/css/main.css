@@ -668,34 +668,31 @@ table.tftable {
   .compare-table {
     font-size: 0.7em; } }
 
-@media (min-width: 47.05em) and (max-width: 64em) {
-  #menu-bg .tab_container label {
-    margin-top: 13px; } }
-
-@media (max-width: 47em) {
-  #menu-bg .tab_container label {
-    margin-top: 16px; } }
-
-@media (max-width: 30em) {
-  #menu-bg .tab_container label {
-    margin-top: 19px; } }
-
-@media (min-width: 47.05em) and (max-width: 64em) {
-  #menu-bg .tab_container label a {
-    padding: 8px 15px;
-    margin-left: 5px; } }
-
-@media (max-width: 47em) {
-  #menu-bg .tab_container label a {
-    font-size: 1.4em;
-    padding: 8px 15px;
-    margin-left: 3px; } }
-
-@media (max-width: 30em) {
-  #menu-bg .tab_container label a {
-    font-size: 1em;
-    padding: 8px 10px;
-    margin-left: 3px; } }
+#menu-bg .tab_container label {
+  margin-top: 11px; }
+  @media (min-width: 47.05em) and (max-width: 64em) {
+    #menu-bg .tab_container label {
+      margin-top: 10px; } }
+  @media (max-width: 47em) {
+    #menu-bg .tab_container label {
+      margin-top: 14px; } }
+  @media (max-width: 30em) {
+    #menu-bg .tab_container label {
+      margin-top: 18px; } }
+  @media (min-width: 47.05em) and (max-width: 64em) {
+    #menu-bg .tab_container label a {
+      padding: 8px 15px;
+      margin-left: 5px; } }
+  @media (max-width: 47em) {
+    #menu-bg .tab_container label a {
+      font-size: 1.4em;
+      padding: 8px 15px;
+      margin-left: 3px; } }
+  @media (max-width: 30em) {
+    #menu-bg .tab_container label a {
+      font-size: 1em;
+      padding: 8px 10px;
+      margin-left: 3px; } }
 
 #opening-hours {
   margin-top: 30px;
