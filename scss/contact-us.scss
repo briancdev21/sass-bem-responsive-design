@@ -1,0 +1,24 @@
+@import 'variables';
+@import 'common';
+@import 'header';
+@import 'footer';
+@import 'main';
+
+@media #{$medium-only} {
+  #contact-us {
+    padding: 10px;
+    font-size: 0.853em;
+  }
+}
+
+@media #{$small-only} {
+  #contact-us {
+    font-size: 0.853em;
+     article {
+       margin: 0;
+     }
+     .complain {
+      margin-left: 10px !important;
+     }
+  }
+}
