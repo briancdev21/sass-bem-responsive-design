@@ -90,3 +90,26 @@ figure img {
     margin-bottom: 10px;
   }
 }
+
+.button-apply-small {
+  margin: 0px;
+  font-family: 'VAG Rounded W01 Light';
+  background: #F96E00;
+  color: white;
+  font-size: 120%;
+  border-radius: 4px;
+  padding: 5px 30px 5px 30px;
+  @media only screen and (max-width: 640px) {
+    margin: 5px;
+    padding: 5px 20px 5px 10px;
+    font-family: 'VAG Rounded W01 Light';
+    background: #F96E00;
+    color: white;
+    font-size: 100%;
+    border-radius: 4px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    font-size: 100%;
+  }
+}

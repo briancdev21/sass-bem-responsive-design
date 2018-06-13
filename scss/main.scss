@@ -1,34 +1,34 @@
 @import 'variables';
-@import 'common';
 @import 'header';
 @import 'footer';
+@import 'common';
 
 #homepage-first-row {
   max-width: 988px;
   margin: auto;
   height: 80px;
   text-align: left;
+
   span {
     font-weight: normal;
     color: #494b51;
     font-size: 3.192em;
     display: inline-block;
-
-    @media #{$medium-only} {
-      font-size: 2.4em;
-      margin: 0px 0px 0px 10px;
-    }
-    @media #{$small-only} {
-      font-size: 2em;
-      margin: 0px 0px 0px 10px;
-    }
   }
 
   @media #{$medium-only} {
     height: 40px;
+    span {
+      font-size: 2.4em;
+      margin: 0px 0px 0px 10px;
+    }
   }
   @media #{$small-only} {
     height: 30px;
+    span {
+      font-size: 2em;
+      margin: 0px 0px 0px 10px;
+    }
   }
 }
 
@@ -175,20 +175,30 @@
     padding-top: 20px;
   }
 }
+
 #compare-loans-page-wide-title {
-  clear: both;
   margin: 0;
   padding: 0;
   width: auto;
+  position: relative;
   background-color: #76a645;
+  padding-bottom: 20px;
   
   h1 {
-    color: #fff;
-    font-size: 2em;
-    margin: 0;
     padding-top: 20px;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 36px;
+  }
+  
+  .scrollToTop img {
+    width: 50px;
+    height: 53px;
+    float: right;
     @media #{$small-only} {
-      font-size: 1.8em;
+      width: 40px;
+      height: 43px;
     }
   }
   article {
@@ -196,11 +206,22 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+  }
 
-    @media #{$medium-only} {
+  @media #{$medium-only} {
+    article {
       margin-left: 10px !important;
     }
-    @media #{$small-only} {
+    h1 {
+      margin: 0 15px;
+    }
+  }
+  @media #{$small-only} {
+    h1 {
+      font-size: 1.8em;
+      margin: 0 15px;
+    }
+    article {
       margin-left: 10px !important;
     }
   }
@@ -270,6 +291,25 @@ table.tftable {
 }
 
 .compare-table {
+  font-size: 0.813em;
+
+  table.tftable {
+    float: left;
+    margin: 0 auto;
+    font-size: 1.4em;
+    color: #ffffff;
+    width: 90%;
+    border-width: 1px;
+    border-color: #ffffff;
+    border-collapse: collapse;
+    td {
+      border-width: 1px;
+      padding: 4px 10px 4px 10px;
+      border-style: solid;
+      border-color: #ffffff;
+    }
+  }
+
   @media #{$medium-only} {
     font-size: 0.9em;
   }
@@ -282,27 +322,25 @@ table.tftable {
 }
 
  #menu-bg .tab_container label {
-   margin-top: 11px;
+  margin-top: 11px;
   @media #{$medium-only} {
-    margin-top: 10px; 
-  }
-  @media #{$small-only} {
-    margin-top: 14px; 
-  }
-  @media #{$xsmall-only} {
-    margin-top: 18px; 
-  }
-  a {
-    @media #{$medium-only} {
+    margin-top: 10px;
+    a {
       padding: 8px 15px;
       margin-left: 5px;
     }
-    @media #{$small-only} {
+  }
+  @media #{$small-only} {
+    margin-top: 14px; 
+    a {
       font-size: 1.4em;
       padding: 8px 15px;
       margin-left: 3px;
     }
-    @media #{$xsmall-only} {
+  }
+  @media #{$xsmall-only} {
+    margin-top: 18px; 
+    a {
       font-size: 1em;
       padding: 8px 10px;
       margin-left: 3px;
@@ -328,10 +366,8 @@ table.tftable {
       padding: 0px;
       font-weight: bold;
       font-size: 2em;
-      @media #{$small-only} {
-        font-size: 1.8em;
-      }
     }
+
     table {
       font-size: 1.6em;
       color: #333333;
@@ -348,13 +384,19 @@ table.tftable {
         border-style: solid;
         border-color: #ffffff;
         font-size: 1em;
-        @media #{$small-only} {
-          font-size: 0.9em;
-        }
-        @media #{$xsmall-only} {
-          font-size: 0.8em;
-        }
-
+      }
+    }
+    @media #{$small-only} {
+      h2 { 
+        font-size: 1.8em;
+      }
+      table td {
+        font-size: 0.9em;
+      }
+    }
+    @media #{$xsmall-only} {
+      table td { 
+        font-size: 0.8em;
       }
     }
   }
@@ -377,37 +419,8 @@ table.tftable {
     @at-root #{&}__column1 {
       flex: 3;
       min-width: 380px;
-      #testimonial {
-        float: none;
-        display: flex;
-        width: auto;
-        margin-right: 20px;
-        background: none;
-        justify-content: flex-start;
-        #testimonialtext {
-          flex: 1;
-          margin: 10px;
-        }
-        #testimonialtextauthor {
-          width: 100%;
-        }
-      }
       @media #{$medium-only} {
         min-width: 100%;
-        #testimonialtext {
-          font-size: 2.2em;
-        }
-      }
-      @media #{$small-only} {
-        #testimonial {
-          margin: 20px 20px 10px;
-        }      
-      }
-      @media #{$medium-only} {
-        #testimonial {
-          max-width: 80%; 
-          margin: 30px auto 0;
-        }      
       }
     }
     @at-root #{&}__column2 {
@@ -416,33 +429,64 @@ table.tftable {
       display: flex;
       align-items: center;
       margin: 0 20px;
-      #video-container {
-        margin: 40px auto;
-        .video {
-          max-width: 700px;
-          margin: auto;
-        }
-        @media #{$medium-only} {
-          .video {
-            width: 100%;
-            max-width: 700px;
-            height: 400px;
-          }      
-        }
-        @media #{$small-only} {
-          .video {
-            width: 100%;
-            height: 300px;
-          }      
-        }
-        @media #{$xsmall-only} {
-          .video {
-            width: 100%;
-            height: 250px;
-          }      
-        }
-      }
     }
+  }
+}
+
+#testimonial {
+  float: none;
+  display: flex;
+  width: auto;
+  margin-right: 20px;
+  background: none;
+  justify-content: flex-start;
+  #testimonialtext {
+    flex: 1;
+    margin: 10px;
+  }
+  #testimonialtextauthor {
+    width: 100%;
+  }
+  @media #{$medium-only} {
+    #testimonial {
+      max-width: 80%; 
+      margin: 30px auto 0;
+      #testimonialtext {
+        font-size: 2.2em;
+      }
+    }   
+  }
+  @media #{$small-only} {
+    #testimonial {
+      margin: 20px 20px 10px;
+    }      
+  }
+}
+
+#video-container {
+  margin: 40px auto;
+  .video {
+    max-width: 700px;
+    margin: auto;
+  }
+  @media #{$medium-only} {
+    .video {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+    }      
+  }
+  @media #{$small-only} {
+    .video {
+      width: 100%;
+      height: 300px;
+    }      
+  }
+  @media #{$xsmall-only} {
+    .video {
+      width: 100%;
+      height: 250px;
+    }      
   }
 }
 
@@ -461,10 +505,6 @@ table.tftable {
       text-align: center;
       color: #ffffff;
       padding: 0;
-
-      @media #{$small-only} {
-        font-size: 1.954em;
-      }
     }
     h4 {
       font-size: 2.154em;
@@ -473,7 +513,10 @@ table.tftable {
       text-align: center;
       color: #ffffff;
       margin: 10px 0px 10px 0px;
-      @media #{$small-only} {
+    }
+
+    @media #{$small-only} {
+      h3, h4 { 
         font-size: 1.954em;
       }
     }
@@ -484,7 +527,12 @@ table.tftable {
       justify-content: center;
       padding: 10px;
       box-sizing: border-box;
-    
+      
+      @media #{$small-only} {
+        flex-direction: column;
+        align-items: center;
+      }
+
       @at-root #{&}__step {
         max-width: 310px;
         height: 360px;
@@ -500,10 +548,6 @@ table.tftable {
         @media #{$small-only} {
           margin: 20px;
         }
-      }
-      @media #{$small-only} {
-        flex-direction: column;
-        align-items: center;
       }
       figcaption {
         font-size: 1.4em;
@@ -522,6 +566,291 @@ table.tftable {
           text-align: center;
         }
       }
+    }
+  }
+}
+
+.compare-page-desc {
+  padding: 0 0 30px 0;
+  @at-root #{&}__column {
+    background: none;
+    margin: 0 auto;
+    max-width: 998px;
+    p {
+      font-size: 1.6em;
+      font-weight: normal;
+      line-height: 1.2em;
+      margin: 0;
+      padding: 20px 0px 10px 0;
+      width: 100%;
+      max-width: 850px;
+    }
+    @media #{$medium-only} {
+      margin: 0 15px;
+    }
+    @media #{$small-only} {
+      margin: 0 15px;
+      p {
+        font-size: 1.4em;
+      }
+    }
+  }
+}
+
+// PayPointForm Style
+
+figure {
+  img {
+    width: auto;
+  }
+}
+
+#ppimg {
+  width: 160px;
+  @media #{$small-only} {
+    display: none;
+  }
+}
+
+#paypointform-page-wide-title {
+  article {
+    max-width: 988px;
+    margin: 0 auto;
+  }
+  @media #{$small-only} {
+    h1 {
+      font-size: 2em;
+    }
+    P {
+      font-size: 1.4em;
+    }
+  }
+}
+
+#paypoint-form {  
+  .formcontentlabel p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+  @media #{$small-only} {
+    font-size: 0.853em;
+  }
+}
+
+.button-apply-large {
+  margin: 0px;
+  padding: 5px 20px 5px 10px;
+  font-family: 'VAG Rounded W01 Light';
+  background: #F96E00;
+  color: white;
+  font-size: 180%;
+  border-radius: 4px;
+}
+
+// About Our Loans Page Style
+.page-wide-title {
+  width: auto;
+  position: relative;
+  clear: both;
+  margin: 40px 0px 10px 0px;
+  padding: 0px 10px;
+
+  article {
+    max-width: 988px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    font-size: 2.8em;
+    color: #6FAB2D;
+  }
+
+  p {
+    font-size: 1.6em;
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+    line-height: 1.2em;
+  }
+}
+
+#about-our-loans {
+  padding: 10px 0 30px;
+}
+
+// Faqs Page
+#faq-page-wide-title {
+  width: auto;
+  position: relative;
+  margin: 40px 0px 10px 0px;
+  padding: 0px 10px;
+}
+
+#faq-buttons {
+  margin-bottom: 80px;
+  article {
+    display: flex;
+    a {
+      flex: 1;
+      img {
+        width: 80% !important;
+        height: 100% !important;
+        padding: 0px;
+        margin: auto;
+        display: block;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .accordion-inner {
+      padding: 10px 10px 20px 20px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #faq #faq-a, #faq #faq-g, #faq #faq-h {
+    margin-left: 10px;
+  }
+}
+
+@media #{$xsmall-only} {
+  main {
+    font-size: 0.73em;
+  }
+}
+
+// Cookie Policy Page
+#cookie-page-wide-title {
+  @media #{$small-only} {
+    font-size: 0.853em;
+  }
+  .tftable-container {
+    overflow-x: auto;
+  }
+}
+
+table.tftable.cookie-policy-tftable {
+  font-size: 1.6em;
+  width: 98%;
+  tr {
+    background-color: #E2EED4;
+  }
+  td {
+    font-size: inherit;
+  }
+}
+
+// Contact Us Page
+@media #{$medium-only} {
+  #contact-us {
+    padding: 10px;
+    font-size: 0.853em;
+  }
+}
+
+@media #{$small-only} {
+  #contact-us {
+    font-size: 0.853em;
+     article {
+       margin: 0;
+     }
+     .complain {
+      margin-left: 10px !important;
+     }
+  }
+}
+
+// About Page 
+#about-page-wide-title {
+  article {
+    background: none;
+  }
+  h1 {
+    color: #000000;
+  }
+}
+
+// Compare Page
+#compare-loans-page-mw-headline {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: auto;
+  background-color: #76a645;
+  padding-bottom: 20px;
+  
+  h1 {
+    padding-top: 20px;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 36px;
+
+    @media #{$small-only} {
+      font-size: 2em;
+      margin: 0 15px;
+    }
+    @media #{$medium-only} {
+      margin: 0 15px;
+    }
+  }
+  
+  article {
+    max-width: 988px;
+    margin: 0 auto;
+  }
+  .scrollToTop img {
+    width: 50px;
+    height: 53px;
+    float: right;
+    @media #{$small-only} {
+      width: 40px;
+      height: 43px;
+    }
+  }
+}
+
+#compare-loans-page-mw-headline {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: auto;
+  background-color: #76a645;
+  padding-bottom: 20px;
+  
+  h1 {
+    padding-top: 20px;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 36px;
+
+    @media #{$small-only} {
+      font-size: 2em;
+      margin: 0 15px;
+    }
+    @media #{$medium-only} {
+      margin: 0 15px;
+    }
+  }
+  
+  article {
+    max-width: 988px;
+    margin: 0 auto;
+  }
+  .scrollToTop img {
+    width: 50px;
+    height: 53px;
+    float: right;
+    @media #{$small-only} {
+      width: 40px;
+      height: 43px;
     }
   }
 }

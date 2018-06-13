@@ -1,81 +1,3 @@
-@font-face {
-  font-family: "VAG Rounded W01 Thin";
-  src: url(../assets/fonts/vagrounded-light-webfont.woff) format("woff"); }
-
-@font-face {
-  font-family: "VAG Rounded W01 Light";
-  src: url(../assets/fonts/vagrounded-light-webfont.woff) format("woff"); }
-
-@font-face {
-  font-family: "VAG Rounded W01 Bold";
-  src: url(../assets/fonts/vagrounded-bold-webfont.woff) format("woff"); }
-
-body {
-  font-family: 'Arial, Helvetica', sans-serif;
-  padding: 0;
-  margin: 0;
-  margin-top: 20px;
-  font-family: 'VAG Rounded W01 Light';
-  font-size: 0.813em;
-  color: #494b51;
-  overflow-x: hidden;
-  background-image: none; }
-  @media (min-width: 47.05em) and (max-width: 64em) {
-    body {
-      margin-top: 55px;
-      overflow-x: hidden; } }
-
-a {
-  text-decoration: none;
-  color: #6FAB2D;
-  transition: color .5s ease;
-  font-weight: bold; }
-
-img {
-  width: auto\9;
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-  border: 0;
-  -ms-interpolation-mode: bicubic; }
-
-li {
-  line-height: 20px; }
-
-.hidden {
-  position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px); }
-
-.vagbold {
-  font-family: 'VAG Rounded W01 Bold'; }
-
-.clear {
-  clear: both; }
-
-figure img {
-  width: 100%; }
-
-.breadcrumb {
-  position: relative;
-  width: auto;
-  max-width: 988px;
-  margin: 0 auto;
-  background-color: transparent;
-  padding: 0; }
-  .breadcrumb li {
-    list-style-type: none;
-    font-size: 100%;
-    margin: 0;
-    display: inline-block; }
-  @media (min-width: 47.05em) and (max-width: 64em) {
-    .breadcrumb {
-      margin-left: 10px; } }
-  @media (max-width: 47em) {
-    .breadcrumb {
-      margin-left: 10px;
-      margin-bottom: 10px; } }
-
 header {
   position: relative;
   width: auto;
@@ -455,6 +377,105 @@ header {
     #footernavigationcontainer .footernavigation__richreview {
       margin-left: 15px; } }
 
+@font-face {
+  font-family: "VAG Rounded W01 Thin";
+  src: url(../assets/fonts/vagrounded-light-webfont.woff) format("woff"); }
+
+@font-face {
+  font-family: "VAG Rounded W01 Light";
+  src: url(../assets/fonts/vagrounded-light-webfont.woff) format("woff"); }
+
+@font-face {
+  font-family: "VAG Rounded W01 Bold";
+  src: url(../assets/fonts/vagrounded-bold-webfont.woff) format("woff"); }
+
+body {
+  font-family: 'Arial, Helvetica', sans-serif;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  font-family: 'VAG Rounded W01 Light';
+  font-size: 0.813em;
+  color: #494b51;
+  overflow-x: hidden;
+  background-image: none; }
+  @media (min-width: 47.05em) and (max-width: 64em) {
+    body {
+      margin-top: 55px;
+      overflow-x: hidden; } }
+
+a {
+  text-decoration: none;
+  color: #6FAB2D;
+  transition: color .5s ease;
+  font-weight: bold; }
+
+img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+li {
+  line-height: 20px; }
+
+.hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.vagbold {
+  font-family: 'VAG Rounded W01 Bold'; }
+
+.clear {
+  clear: both; }
+
+figure img {
+  width: 100%; }
+
+.breadcrumb {
+  position: relative;
+  width: auto;
+  max-width: 988px;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 0; }
+  .breadcrumb li {
+    list-style-type: none;
+    font-size: 100%;
+    margin: 0;
+    display: inline-block; }
+  @media (min-width: 47.05em) and (max-width: 64em) {
+    .breadcrumb {
+      margin-left: 10px; } }
+  @media (max-width: 47em) {
+    .breadcrumb {
+      margin-left: 10px;
+      margin-bottom: 10px; } }
+
+.button-apply-small {
+  margin: 0px;
+  font-family: 'VAG Rounded W01 Light';
+  background: #F96E00;
+  color: white;
+  font-size: 120%;
+  border-radius: 4px;
+  padding: 5px 30px 5px 30px; }
+  @media only screen and (max-width: 640px) {
+    .button-apply-small {
+      margin: 5px;
+      padding: 5px 20px 5px 10px;
+      font-family: 'VAG Rounded W01 Light';
+      background: #F96E00;
+      color: white;
+      font-size: 100%;
+      border-radius: 4px; } }
+  @media only screen and (max-width: 900px) {
+    .button-apply-small {
+      font-size: 100%; } }
+
 #homepage-first-row {
   max-width: 988px;
   margin: auto;
@@ -465,20 +486,18 @@ header {
     color: #494b51;
     font-size: 3.192em;
     display: inline-block; }
-    @media (min-width: 47.05em) and (max-width: 64em) {
+  @media (min-width: 47.05em) and (max-width: 64em) {
+    #homepage-first-row {
+      height: 40px; }
       #homepage-first-row span {
         font-size: 2.4em;
         margin: 0px 0px 0px 10px; } }
-    @media (max-width: 47em) {
+  @media (max-width: 47em) {
+    #homepage-first-row {
+      height: 30px; }
       #homepage-first-row span {
         font-size: 2em;
         margin: 0px 0px 0px 10px; } }
-  @media (min-width: 47.05em) and (max-width: 64em) {
-    #homepage-first-row {
-      height: 40px; } }
-  @media (max-width: 47em) {
-    #homepage-first-row {
-      height: 30px; } }
 
 #homepage-second-row {
   max-width: 988px;
@@ -579,30 +598,42 @@ header {
       padding-top: 20px; } }
 
 #compare-loans-page-wide-title {
-  clear: both;
   margin: 0;
   padding: 0;
   width: auto;
-  background-color: #76a645; }
+  position: relative;
+  background-color: #76a645;
+  padding-bottom: 20px; }
   #compare-loans-page-wide-title h1 {
+    padding-top: 20px;
     color: #fff;
-    font-size: 2em;
-    margin: 0;
-    padding-top: 20px; }
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 36px; }
+  #compare-loans-page-wide-title .scrollToTop img {
+    width: 50px;
+    height: 53px;
+    float: right; }
     @media (max-width: 47em) {
-      #compare-loans-page-wide-title h1 {
-        font-size: 1.8em; } }
+      #compare-loans-page-wide-title .scrollToTop img {
+        width: 40px;
+        height: 43px; } }
   #compare-loans-page-wide-title article {
     max-width: 988px;
     margin: 0 auto;
     display: flex;
     align-items: center; }
-    @media (min-width: 47.05em) and (max-width: 64em) {
-      #compare-loans-page-wide-title article {
-        margin-left: 10px !important; } }
-    @media (max-width: 47em) {
-      #compare-loans-page-wide-title article {
-        margin-left: 10px !important; } }
+  @media (min-width: 47.05em) and (max-width: 64em) {
+    #compare-loans-page-wide-title article {
+      margin-left: 10px !important; }
+    #compare-loans-page-wide-title h1 {
+      margin: 0 15px; } }
+  @media (max-width: 47em) {
+    #compare-loans-page-wide-title h1 {
+      font-size: 1.8em;
+      margin: 0 15px; }
+    #compare-loans-page-wide-title article {
+      margin-left: 10px !important; } }
 
 #menu-bg {
   position: relative;
@@ -656,43 +687,54 @@ table.tftable {
     border-style: solid;
     border-color: #ffffff; }
 
-@media (min-width: 47.05em) and (max-width: 64em) {
-  .compare-table {
-    font-size: 0.9em; } }
-
-@media (max-width: 47em) {
-  .compare-table {
-    font-size: 0.8em; } }
-
-@media (max-width: 30em) {
-  .compare-table {
-    font-size: 0.7em; } }
+.compare-table {
+  font-size: 0.813em; }
+  .compare-table table.tftable {
+    float: left;
+    margin: 0 auto;
+    font-size: 1.4em;
+    color: #ffffff;
+    width: 90%;
+    border-width: 1px;
+    border-color: #ffffff;
+    border-collapse: collapse; }
+    .compare-table table.tftable td {
+      border-width: 1px;
+      padding: 4px 10px 4px 10px;
+      border-style: solid;
+      border-color: #ffffff; }
+  @media (min-width: 47.05em) and (max-width: 64em) {
+    .compare-table {
+      font-size: 0.9em; } }
+  @media (max-width: 47em) {
+    .compare-table {
+      font-size: 0.8em; } }
+  @media (max-width: 30em) {
+    .compare-table {
+      font-size: 0.7em; } }
 
 #menu-bg .tab_container label {
   margin-top: 11px; }
   @media (min-width: 47.05em) and (max-width: 64em) {
     #menu-bg .tab_container label {
-      margin-top: 10px; } }
+      margin-top: 10px; }
+      #menu-bg .tab_container label a {
+        padding: 8px 15px;
+        margin-left: 5px; } }
   @media (max-width: 47em) {
     #menu-bg .tab_container label {
-      margin-top: 14px; } }
+      margin-top: 14px; }
+      #menu-bg .tab_container label a {
+        font-size: 1.4em;
+        padding: 8px 15px;
+        margin-left: 3px; } }
   @media (max-width: 30em) {
     #menu-bg .tab_container label {
-      margin-top: 18px; } }
-  @media (min-width: 47.05em) and (max-width: 64em) {
-    #menu-bg .tab_container label a {
-      padding: 8px 15px;
-      margin-left: 5px; } }
-  @media (max-width: 47em) {
-    #menu-bg .tab_container label a {
-      font-size: 1.4em;
-      padding: 8px 15px;
-      margin-left: 3px; } }
-  @media (max-width: 30em) {
-    #menu-bg .tab_container label a {
-      font-size: 1em;
-      padding: 8px 10px;
-      margin-left: 3px; } }
+      margin-top: 18px; }
+      #menu-bg .tab_container label a {
+        font-size: 1em;
+        padding: 8px 10px;
+        margin-left: 3px; } }
 
 #opening-hours {
   margin-top: 30px;
@@ -711,9 +753,6 @@ table.tftable {
       padding: 0px;
       font-weight: bold;
       font-size: 2em; }
-      @media (max-width: 47em) {
-        #opening-hours article h2 {
-          font-size: 1.8em; } }
     #opening-hours article table {
       font-size: 1.6em;
       color: #333333;
@@ -729,12 +768,14 @@ table.tftable {
         border-style: solid;
         border-color: #ffffff;
         font-size: 1em; }
-        @media (max-width: 47em) {
-          #opening-hours article table td {
-            font-size: 0.9em; } }
-        @media (max-width: 30em) {
-          #opening-hours article table td {
-            font-size: 0.8em; } }
+    @media (max-width: 47em) {
+      #opening-hours article h2 {
+        font-size: 1.8em; }
+      #opening-hours article table td {
+        font-size: 0.9em; } }
+    @media (max-width: 30em) {
+      #opening-hours article table td {
+        font-size: 0.8em; } }
 
 #homepage-third-row-green {
   width: auto;
@@ -751,54 +792,56 @@ table.tftable {
     #homepage-third-row-green .homepage-third-row__column1 {
       flex: 3;
       min-width: 380px; }
-      #homepage-third-row-green .homepage-third-row__column1 #testimonial {
-        float: none;
-        display: flex;
-        width: auto;
-        margin-right: 20px;
-        background: none;
-        justify-content: flex-start; }
-        #homepage-third-row-green .homepage-third-row__column1 #testimonial #testimonialtext {
-          flex: 1;
-          margin: 10px; }
-        #homepage-third-row-green .homepage-third-row__column1 #testimonial #testimonialtextauthor {
-          width: 100%; }
       @media (min-width: 47.05em) and (max-width: 64em) {
         #homepage-third-row-green .homepage-third-row__column1 {
-          min-width: 100%; }
-          #homepage-third-row-green .homepage-third-row__column1 #testimonialtext {
-            font-size: 2.2em; } }
-      @media (max-width: 47em) {
-        #homepage-third-row-green .homepage-third-row__column1 #testimonial {
-          margin: 20px 20px 10px; } }
-      @media (min-width: 47.05em) and (max-width: 64em) {
-        #homepage-third-row-green .homepage-third-row__column1 #testimonial {
-          max-width: 80%;
-          margin: 30px auto 0; } }
+          min-width: 100%; } }
     #homepage-third-row-green .homepage-third-row__column2 {
       flex: 2;
       min-width: 320px;
       display: flex;
       align-items: center;
       margin: 0 20px; }
-      #homepage-third-row-green .homepage-third-row__column2 #video-container {
-        margin: 40px auto; }
-        #homepage-third-row-green .homepage-third-row__column2 #video-container .video {
-          max-width: 700px;
-          margin: auto; }
-        @media (min-width: 47.05em) and (max-width: 64em) {
-          #homepage-third-row-green .homepage-third-row__column2 #video-container .video {
-            width: 100%;
-            max-width: 700px;
-            height: 400px; } }
-        @media (max-width: 47em) {
-          #homepage-third-row-green .homepage-third-row__column2 #video-container .video {
-            width: 100%;
-            height: 300px; } }
-        @media (max-width: 30em) {
-          #homepage-third-row-green .homepage-third-row__column2 #video-container .video {
-            width: 100%;
-            height: 250px; } }
+
+#testimonial {
+  float: none;
+  display: flex;
+  width: auto;
+  margin-right: 20px;
+  background: none;
+  justify-content: flex-start; }
+  #testimonial #testimonialtext {
+    flex: 1;
+    margin: 10px; }
+  #testimonial #testimonialtextauthor {
+    width: 100%; }
+  @media (min-width: 47.05em) and (max-width: 64em) {
+    #testimonial #testimonial {
+      max-width: 80%;
+      margin: 30px auto 0; }
+      #testimonial #testimonial #testimonialtext {
+        font-size: 2.2em; } }
+  @media (max-width: 47em) {
+    #testimonial #testimonial {
+      margin: 20px 20px 10px; } }
+
+#video-container {
+  margin: 40px auto; }
+  #video-container .video {
+    max-width: 700px;
+    margin: auto; }
+  @media (min-width: 47.05em) and (max-width: 64em) {
+    #video-container .video {
+      width: 100%;
+      max-width: 700px;
+      height: 400px; } }
+  @media (max-width: 47em) {
+    #video-container .video {
+      width: 100%;
+      height: 300px; } }
+  @media (max-width: 30em) {
+    #video-container .video {
+      width: 100%;
+      height: 250px; } }
 
 .howitworks_sec {
   background-color: #77A648; }
@@ -814,9 +857,6 @@ table.tftable {
       text-align: center;
       color: #ffffff;
       padding: 0; }
-      @media (max-width: 47em) {
-        .howitworks_sec__content h3 {
-          font-size: 1.954em; } }
     .howitworks_sec__content h4 {
       font-size: 2.154em;
       font-family: 'VAG Rounded W01 Bold';
@@ -824,15 +864,19 @@ table.tftable {
       text-align: center;
       color: #ffffff;
       margin: 10px 0px 10px 0px; }
-      @media (max-width: 47em) {
-        .howitworks_sec__content h4 {
-          font-size: 1.954em; } }
+    @media (max-width: 47em) {
+      .howitworks_sec__content h3, .howitworks_sec__content h4 {
+        font-size: 1.954em; } }
     .howitworks_sec__content .howitworks {
       width: 100%;
       display: flex;
       justify-content: center;
       padding: 10px;
       box-sizing: border-box; }
+      @media (max-width: 47em) {
+        .howitworks_sec__content .howitworks {
+          flex-direction: column;
+          align-items: center; } }
       .howitworks_sec__content .howitworks__step {
         max-width: 310px;
         height: 360px;
@@ -847,10 +891,6 @@ table.tftable {
         @media (max-width: 47em) {
           .howitworks_sec__content .howitworks__step {
             margin: 20px; } }
-      @media (max-width: 47em) {
-        .howitworks_sec__content .howitworks {
-          flex-direction: column;
-          align-items: center; } }
       .howitworks_sec__content .howitworks figcaption {
         font-size: 1.4em;
         line-height: 1.2em;
@@ -865,3 +905,217 @@ table.tftable {
           font-family: 'VAG Rounded W01 Bold';
           max-width: 310px;
           text-align: center; }
+
+.compare-page-desc {
+  padding: 0 0 30px 0; }
+  .compare-page-desc__column {
+    background: none;
+    margin: 0 auto;
+    max-width: 998px; }
+    .compare-page-desc__column p {
+      font-size: 1.6em;
+      font-weight: normal;
+      line-height: 1.2em;
+      margin: 0;
+      padding: 20px 0px 10px 0;
+      width: 100%;
+      max-width: 850px; }
+    @media (min-width: 47.05em) and (max-width: 64em) {
+      .compare-page-desc__column {
+        margin: 0 15px; } }
+    @media (max-width: 47em) {
+      .compare-page-desc__column {
+        margin: 0 15px; }
+        .compare-page-desc__column p {
+          font-size: 1.4em; } }
+
+figure img {
+  width: auto; }
+
+#ppimg {
+  width: 160px; }
+  @media (max-width: 47em) {
+    #ppimg {
+      display: none; } }
+
+#paypointform-page-wide-title article {
+  max-width: 988px;
+  margin: 0 auto; }
+
+@media (max-width: 47em) {
+  #paypointform-page-wide-title h1 {
+    font-size: 2em; }
+  #paypointform-page-wide-title P {
+    font-size: 1.4em; } }
+
+#paypoint-form .formcontentlabel p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+@media (max-width: 47em) {
+  #paypoint-form {
+    font-size: 0.853em; } }
+
+.button-apply-large {
+  margin: 0px;
+  padding: 5px 20px 5px 10px;
+  font-family: 'VAG Rounded W01 Light';
+  background: #F96E00;
+  color: white;
+  font-size: 180%;
+  border-radius: 4px; }
+
+.page-wide-title {
+  width: auto;
+  position: relative;
+  clear: both;
+  margin: 40px 0px 10px 0px;
+  padding: 0px 10px; }
+  .page-wide-title article {
+    max-width: 988px;
+    margin: 0 auto; }
+  .page-wide-title h1 {
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    font-size: 2.8em;
+    color: #6FAB2D; }
+  .page-wide-title p {
+    font-size: 1.6em;
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+    line-height: 1.2em; }
+
+#about-our-loans {
+  padding: 10px 0 30px; }
+
+#faq-page-wide-title {
+  width: auto;
+  position: relative;
+  margin: 40px 0px 10px 0px;
+  padding: 0px 10px; }
+
+#faq-buttons {
+  margin-bottom: 80px; }
+  #faq-buttons article {
+    display: flex; }
+    #faq-buttons article a {
+      flex: 1; }
+      #faq-buttons article a img {
+        width: 80% !important;
+        height: 100% !important;
+        padding: 0px;
+        margin: auto;
+        display: block; }
+
+@media only screen and (max-width: 900px) {
+  .accordion-inner {
+    padding: 10px 10px 20px 20px; } }
+
+@media only screen and (min-width: 900px) {
+  #faq #faq-a, #faq #faq-g, #faq #faq-h {
+    margin-left: 10px; } }
+
+@media (max-width: 30em) {
+  main {
+    font-size: 0.73em; } }
+
+@media (max-width: 47em) {
+  #cookie-page-wide-title {
+    font-size: 0.853em; } }
+
+#cookie-page-wide-title .tftable-container {
+  overflow-x: auto; }
+
+table.tftable.cookie-policy-tftable {
+  font-size: 1.6em;
+  width: 98%; }
+  table.tftable.cookie-policy-tftable tr {
+    background-color: #E2EED4; }
+  table.tftable.cookie-policy-tftable td {
+    font-size: inherit; }
+
+@media (min-width: 47.05em) and (max-width: 64em) {
+  #contact-us {
+    padding: 10px;
+    font-size: 0.853em; } }
+
+@media (max-width: 47em) {
+  #contact-us {
+    font-size: 0.853em; }
+    #contact-us article {
+      margin: 0; }
+    #contact-us .complain {
+      margin-left: 10px !important; } }
+
+#about-page-wide-title article {
+  background: none; }
+
+#about-page-wide-title h1 {
+  color: #000000; }
+
+#compare-loans-page-mw-headline {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: auto;
+  background-color: #76a645;
+  padding-bottom: 20px; }
+  #compare-loans-page-mw-headline h1 {
+    padding-top: 20px;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 36px; }
+    @media (max-width: 47em) {
+      #compare-loans-page-mw-headline h1 {
+        font-size: 2em;
+        margin: 0 15px; } }
+    @media (min-width: 47.05em) and (max-width: 64em) {
+      #compare-loans-page-mw-headline h1 {
+        margin: 0 15px; } }
+  #compare-loans-page-mw-headline article {
+    max-width: 988px;
+    margin: 0 auto; }
+  #compare-loans-page-mw-headline .scrollToTop img {
+    width: 50px;
+    height: 53px;
+    float: right; }
+    @media (max-width: 47em) {
+      #compare-loans-page-mw-headline .scrollToTop img {
+        width: 40px;
+        height: 43px; } }
+
+#compare-loans-page-mw-headline {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: auto;
+  background-color: #76a645;
+  padding-bottom: 20px; }
+  #compare-loans-page-mw-headline h1 {
+    padding-top: 20px;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 36px; }
+    @media (max-width: 47em) {
+      #compare-loans-page-mw-headline h1 {
+        font-size: 2em;
+        margin: 0 15px; } }
+    @media (min-width: 47.05em) and (max-width: 64em) {
+      #compare-loans-page-mw-headline h1 {
+        margin: 0 15px; } }
+  #compare-loans-page-mw-headline article {
+    max-width: 988px;
+    margin: 0 auto; }
+  #compare-loans-page-mw-headline .scrollToTop img {
+    width: 50px;
+    height: 53px;
+    float: right; }
+    @media (max-width: 47em) {
+      #compare-loans-page-mw-headline .scrollToTop img {
+        width: 40px;
+        height: 43px; } }
